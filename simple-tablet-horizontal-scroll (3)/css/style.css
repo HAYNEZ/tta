@@ -1,5 +1,6 @@
 .page-wrap {
   padding-top: 400px;
+  padding-left: 260px;
   z-index:3;
   
   -ms-touch-action: pan-y;
@@ -52,10 +53,11 @@ translateY(154px)
 }
 
 .item { 
+  font-size: 30px;
   width: 100px;
   height: 50px;
   margin: 2px;
-  background-color: blue;
+  background-color: grey;
   display: inline-block;
 }
 

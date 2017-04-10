@@ -3,9 +3,11 @@ var app = angular.module('myApp', []);
 // controller
 app.controller('mainCtrl', function($scope) {
   $scope.items = [];
-  for (var i=0; i<100; ++i) {
-    $scope.items.push({ id: i});
-  }
+  $scope.items.push({ id: 0, name:"a" });
+  $scope.items.push({ id: 1, name:"b" });
+  $scope.items.push({ id: 2, name:"c" });
+  $scope.items.push({ id: 3, name:"d" });
+  
 
   $scope.click = function(id) {
     $scope.items[id].selected = !$scope.items[id].selected;

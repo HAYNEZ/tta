@@ -28,6 +28,7 @@
   <div ng-controller="mainCtrl" style="width: 100%;">
     <div class="horizontal-slide">
       <div ng-repeat="item in items" class="item" ng-class="{selected: item.selected}" ng-click="click(item.id)">
+      {{item.name}}
       </div>
     </div>
   </div>
