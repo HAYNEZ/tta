@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Tablet Horizontal Scroll</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<form class="input">
+
+ <textarea name="Text1" cols="40" rows="5" id="recipeText"></textarea>
+</form>
+
+<img class="left" src="https://i.imgsafe.org/398888fb24.png"></img>
+<img class="top" src="https://i.imgsafe.org/b7b6609e98.png"></img>
+
+
+<img class="right" src="https://i.imgsafe.org/26d324f32a.png"></img>
+<img class="bottom item1" src="https://i.imgsafe.org/b7b64e417b.png"></img>
+<div class="page-wrap" ng-app="myApp">
+  <div ng-controller="mainCtrl" style="width: 100%;">
+    <div class="horizontal-slide">
+      <div ng-repeat="item in items" class="item" ng-class="{selected: item.selected}" ng-click="click(item.id)">
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/tta.js"></script>
+
+</body>
+</html>
