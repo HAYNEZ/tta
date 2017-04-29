@@ -1,3 +1,5 @@
+
+
 .page-wrap {
   padding-top: 400px;
   z-index:3;
@@ -44,19 +46,28 @@ translateY(154px)
   white-space: nowrap;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+  transform: translateX(262px);
 }
 
 .horizontal-slide .item {
   display: inline-block;
   float: none;
+
+
 }
 
 .item { 
-  width: 100px;
+  font-family: calibri;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
   height: 50px;
-  margin: 2px;
-  background-color: blue;
+  margin: 4px;
+  background-color: #7BB368;
   display: inline-block;
+  line-height: 50px;
+
 }
 
 .item.selected {
@@ -70,3 +81,8 @@ translateY(154px)
   font-size: 32px;
   
 }
+
+.query {
+  transform: translateX(268px)
+}
+

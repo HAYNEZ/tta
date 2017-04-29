@@ -3,16 +3,23 @@ var app = angular.module('myApp', []);
 // controller
 app.controller('mainCtrl', function($scope) {
   $scope.items = [];
-  for (var i=0; i<100; ++i) {
-    $scope.items.push({ id: i});
-  }
+    $scope.items.push({ id: 0, name:"Zwiebeln" });
+    $scope.items.push({ id: 1, name:"Sellerie" });
+    $scope.items.push({ id: 2, name:"Schinken" });
+    $scope.items.push({ id: 0, name:"Eier" });
+    $scope.items.push({ id: 1, name:"Petersilie" });
+    $scope.items.push({ id: 2, name:"a" });
+    $scope.items.push({ id: 0, name:"a" });
+    $scope.items.push({ id: 1, name:"a" });
+    $scope.items.push({ id: 2, name:"a" });
+
 
   $scope.click = function(id) {
-    $scope.items[id].selected = !$scope.items[id].selected;
+      $('#recipeText').append($scope.items[id].name);
   };
- 
-  
-  
+
+
+
 });
 
 //$scope.names = [

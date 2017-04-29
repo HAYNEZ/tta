@@ -26,8 +26,15 @@
 <img class="bottom item1" src="https://i.imgsafe.org/b7b64e417b.png"></img>
 <div class="page-wrap" ng-app="myApp">
   <div ng-controller="mainCtrl" style="width: 100%;">
+
+
+    <input class="query" ng-model="query.name" />
+
+
+
     <div class="horizontal-slide">
-      <div ng-repeat="item in items" class="item" ng-class="{selected: item.selected}" ng-click="click(item.id)">
+      <div ng-repeat="item in items | filter:query" class="item" ng-class="{selected: item.selected}" ng-click="click(item.id)">
+        {{item.name}}
       </div>
     </div>
   </div>

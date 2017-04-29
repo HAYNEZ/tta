@@ -1,9 +1,7 @@
 $( document ).ready(function() {
    $('#recipeText').append('Hello World');
-    $( ".item" ).click(function() {
-  		$('#recipeText').append('Hello World');
+    $('#query').append('a');
 
-	});
 
     var lastentry = "";
 
